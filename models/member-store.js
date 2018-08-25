@@ -13,6 +13,10 @@ const memberStore = {
      return _.find(this.memberCollection, { id: id });
   },
   
+   removeMember(id) {
+    _.remove(this.memberCollection, { id: id });
+  },
+  
    removeAssessment(id, assessmentId) {
     const member = this.getMember(id);
      _.remove(member.assessments, { id: assessmentId });
