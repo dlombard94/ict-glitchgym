@@ -1,12 +1,15 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const memberCollection = require('../models/member-store.js');
+const memberStore = require('../models/member-store');
 
 const member = {
   index(request, response) {
+    const memberId = request.params.id;
+    logger.debug('Member id = ', memberId);
     const viewData = {
       title: 'Member',
+      member: memberStore.getMember(memberId),
     };
     response.render('member', viewData);
   },

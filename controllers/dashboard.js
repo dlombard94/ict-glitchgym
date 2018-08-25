@@ -1,17 +1,16 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const memberCollection = require('../models/member-store.js');
-
+const memberStore = require('../models/member-store');
 
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
     const viewData = {
       title: 'Glitch Gym Dashboard',
-      members: memberCollection,
+      members: memberStore.getAllMembers(),
     };
-    logger.info('about to render', memberCollection)
+    logger.info('about to render', memberStore.getAllMembers());
     response.render('dashboard', viewData);
   },
 };
