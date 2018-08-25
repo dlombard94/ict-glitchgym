@@ -1,0 +1,82 @@
+{
+  "memberCollection": [
+    {
+      "id": "01",
+      "name": "Darragh",
+      "email": "Beethoven Sonatas",
+      "address": "Beethoven Sonatas",
+      "gender": "Beethoven Sonatas",
+      "height": 33,
+      "startingweight": 33,
+       
+      "assessments": [
+        {
+          "id": "03",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "04",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "05",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Darrffagh",
+      "email": "Beethoven Sonatas",
+      "address": "Beethoven Sonatas",
+      "gender": "Beethoven Sonatas",
+      "height": 353,
+      "startingweight": 353,
+      
+      "assessments": [
+        {
+          "id": "06",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "07",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "08",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        }
+      ]
+    }
+  ]
+}
