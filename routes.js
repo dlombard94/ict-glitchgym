@@ -3,6 +3,7 @@
 const express = require('express');
 const accounts = require('./controllers/accounts.js');
 const router = express.Router();
+const trainerdashboard = require('./controllers/trainerdashboard.js');
 const member = require('./controllers/member.js');
 
 const dashboard = require('./controllers/dashboard.js');
@@ -21,7 +22,10 @@ router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 
 router.get('/member/:id',member.index);
-router.get('/dashboard/deletemember/:id',dashboard.deleteMember);
+
+router.get('/trainerdashboard',trainerdashboard.index);
+router.get('/trainerassessment/:id',trainerdashboard.trainerAssessment);
+router.get('/trainerdashboard/deletemember/:id',trainerdashboard.deleteMember);
 
 router.post('/member/:id/addassessment', member.addAssessment);
 router.get('/member/:id/deleteassessment/:assessmentid',member.deleteAssessment)
