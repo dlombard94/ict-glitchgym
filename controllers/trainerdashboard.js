@@ -26,7 +26,7 @@ const trainerdashboard = {
       //define all the members for the trainer dashboard
       member: memberStore.getMemberById(memberId),
     };
-    response.render('trainerdashboard', viewData);
+    response.render('trainerassessment', viewData);
   },
   
   deleteMember(request, response) {
