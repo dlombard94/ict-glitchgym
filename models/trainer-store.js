@@ -12,8 +12,9 @@ const trainerStore = {
     return this.store.findAll(this.collection);
   },
 
-  addTrainer(user) {
-    this.store.add(this.collection, user);
+  addTrainer(trainer) {
+    this.store.add(this.collection, trainer);
+    this.store.save();
   },
 
   getTrainerById(id) {

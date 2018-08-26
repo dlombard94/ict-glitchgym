@@ -8,11 +8,15 @@ const memberStore = {
   store: new JsonStore('./models/member-store.json', { memberCollection: [] }),
   collection: 'memberCollection',
 
+  getMemberAssessmments(memberid) {
+    return this.store.findBy(this.collection, { memberid: memberid });
+  },
+  
   getAllMembers() {
      return this.store.findAll(this.collection);
   },
 
-   getMember(id) {
+  getMember(id) {
      return this.store.findOneBy(this.collection, { id: id });
   },
   
@@ -20,8 +24,13 @@ const memberStore = {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  getMembererByEmail(email) {
+  getMemberByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
+  },
+  
+  addMember(member) {
+    this.store.add(this.collection, member);
+    this.store.save();
   },
   
    removeMember(id) {

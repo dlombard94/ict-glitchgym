@@ -3,7 +3,8 @@
     {
       "id": "01",
       "name": "Darragh",
-      "email": "Beethoven Sonatas",
+      "email": "q",
+      "password": "secret",
       "address": "Beethoven Sonatas",
       "gender": "Beethoven Sonatas",
       "height": 33,
@@ -41,7 +42,8 @@
     {
       "id": "02",
       "name": "Darrffagh",
-      "email": "Beethoven Sonatas",
+      "email": "qw",
+      "password": "secret",
       "address": "Beethoven Sonatas",
       "gender": "Beethoven Sonatas",
       "height": 353,
@@ -75,6 +77,16 @@
           "hips": 1
         }
       ]
+    },
+    {
+      "name": "qwerty",
+      "gender": "male",
+      "email": "qwe",
+      "password": "",
+      "address": "d",
+      "height": "3",
+      "startingweight": "3",
+      "id": "891f6bd7-a4a1-4523-9d76-913d01340bc5"
     }
   ]
 }
