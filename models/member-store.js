@@ -16,6 +16,14 @@ const memberStore = {
      return this.store.findOneBy(this.collection, { id: id });
   },
   
+  getMemberById(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+
+  getMembererByEmail(email) {
+    return this.store.findOneBy(this.collection, { email: email });
+  },
+  
    removeMember(id) {
     const member = this.getMember(id);
     this.store.remove(this.collection, member);
