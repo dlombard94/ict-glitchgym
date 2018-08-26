@@ -8,7 +8,90 @@
       "address": "2",
       "height": "2",
       "startingweight": "2",
-      "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8"
+      "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8",
+      "assessments": [
+        {
+          "id": "03",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "04",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "05",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "f198c306-c293-4377-9279-e81b1e1f6176",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "11"
+        },
+        {
+          "id": "6670b8be-e754-466e-8529-76922dcd7db2",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1"
+        },
+        {
+          "id": "cfa1fb89-4cc1-4f80-aa4b-96c293d5b4fa",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "11"
+        },
+        {
+          "id": "98c681a7-e179-483f-a3e6-8bddd1153787",
+          "weight": "3",
+          "chest": "3",
+          "thigh": "3",
+          "upperarm": "3",
+          "waist": "3",
+          "hips": "3"
+        },
+        {
+          "id": "bc07085f-3404-4bcf-b4ed-595f4d9f6536",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1"
+        },
+        {
+          "id": "981dd311-086c-4785-807f-9d83620fdfd2",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "44444",
+          "hips": "1"
+        }
+      ]
     },
     {
       "name": "dfsf",
