@@ -22,12 +22,13 @@ router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 
 router.get('/member/:id',member.index);
+router.post('/member/:id/addassessment', member.addAssessment);
+router.get('/member/:id/deleteassessment/:assessmentid',member.deleteAssessment)
 
 router.get('/trainerdashboard',trainerdashboard.index);
 router.get('/trainerassessment/:id',trainerdashboard.trainerAssessment);
 router.get('/trainerdashboard/deletemember/:id',trainerdashboard.deleteMember);
 
-router.post('/member/:id/addassessment', member.addAssessment);
-router.get('/member/:id/deleteassessment/:assessmentid',member.deleteAssessment)
+
 
 module.exports = router;
