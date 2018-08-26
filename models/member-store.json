@@ -1,80 +1,34 @@
 {
   "memberCollection": [
     {
-      "id": "01",
-      "name": "Darragh",
-      "email": "Beethoven Sonatas",
-      "address": "Beethoven Sonatas",
-      "gender": "Beethoven Sonatas",
-      "height": 33,
-      "startingweight": 33,
-      "assessments": [
-        {
-          "id": "03",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
-        },
-        {
-          "id": "04",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
-        },
-        {
-          "id": "0eb14999-e592-41a9-b0a6-9653c99e004c",
-          "weight": "1",
-          "chest": "1",
-          "thigh": "1",
-          "upperarm": "1",
-          "waist": "1",
-          "hips": "1"
-        }
-      ]
+      "name": "wer",
+      "gender": "wer",
+      "email": "2",
+      "password": "secret",
+      "address": "2",
+      "height": "2",
+      "startingweight": "2",
+      "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8"
     },
     {
-      "id": "02",
-      "name": "Darrffagh",
-      "email": "Beethoven Sonatas",
-      "address": "Beethoven Sonatas",
-      "gender": "Beethoven Sonatas",
-      "height": 353,
-      "startingweight": 353,
-      "assessments": [
-        {
-          "id": "06",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
-        },
-        {
-          "id": "07",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
-        },
-        {
-          "id": "08",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
-        }
-      ]
+      "name": "dfsf",
+      "gender": "sdf",
+      "email": "3",
+      "password": "secret",
+      "address": "3",
+      "height": "3",
+      "startingweight": "3",
+      "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c"
+    },
+    {
+      "name": "1",
+      "gender": "1",
+      "email": "1",
+      "password": "secret",
+      "address": "1",
+      "height": "1",
+      "startingweight": "1",
+      "id": "741f57f2-33b4-4fd8-9c29-620ca32635fa"
     }
   ]
 }
