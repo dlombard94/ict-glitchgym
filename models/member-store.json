@@ -36,60 +36,6 @@
           "upperarm": 1,
           "waist": 1,
           "hips": 1
-        },
-        {
-          "id": "f198c306-c293-4377-9279-e81b1e1f6176",
-          "weight": "1",
-          "chest": "1",
-          "thigh": "1",
-          "upperarm": "1",
-          "waist": "1",
-          "hips": "11"
-        },
-        {
-          "id": "6670b8be-e754-466e-8529-76922dcd7db2",
-          "weight": "1",
-          "chest": "1",
-          "thigh": "1",
-          "upperarm": "1",
-          "waist": "1",
-          "hips": "1"
-        },
-        {
-          "id": "cfa1fb89-4cc1-4f80-aa4b-96c293d5b4fa",
-          "weight": "1",
-          "chest": "1",
-          "thigh": "1",
-          "upperarm": "1",
-          "waist": "1",
-          "hips": "11"
-        },
-        {
-          "id": "98c681a7-e179-483f-a3e6-8bddd1153787",
-          "weight": "3",
-          "chest": "3",
-          "thigh": "3",
-          "upperarm": "3",
-          "waist": "3",
-          "hips": "3"
-        },
-        {
-          "id": "bc07085f-3404-4bcf-b4ed-595f4d9f6536",
-          "weight": "1",
-          "chest": "1",
-          "thigh": "1",
-          "upperarm": "1",
-          "waist": "1",
-          "hips": "1"
-        },
-        {
-          "id": "981dd311-086c-4785-807f-9d83620fdfd2",
-          "weight": "1",
-          "chest": "1",
-          "thigh": "1",
-          "upperarm": "1",
-          "waist": "44444",
-          "hips": "1"
         }
       ]
     },
@@ -101,7 +47,8 @@
       "address": "3",
       "height": "3",
       "startingweight": "3",
-      "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c"
+      "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c",
+      "assessments": []
     },
     {
       "name": "1",
@@ -111,7 +58,18 @@
       "address": "1",
       "height": "1",
       "startingweight": "1",
-      "id": "741f57f2-33b4-4fd8-9c29-620ca32635fa"
+      "id": "741f57f2-33b4-4fd8-9c29-620ca32635fa",
+      "assessments": [
+        {
+          "id": "135ec9f3-54f7-40c2-ad65-8b0f2673c357",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1"
+        }
+      ]
     }
   ]
 }
