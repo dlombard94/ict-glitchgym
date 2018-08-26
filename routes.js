@@ -14,7 +14,7 @@ router.get('/about', about.index);
 router.get('/member/:id',member.index);
 router.get('/dashboard/deletemember/:id',dashboard.deleteMember);
 
-
+router.post('/member/:id/addassessment', member.addAssessment);
 router.get('/member/:id/deleteassessment/:assessmentid',member.deleteAssessment)
 
 module.exports = router;

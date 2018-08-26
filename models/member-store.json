@@ -8,7 +8,6 @@
       "gender": "Beethoven Sonatas",
       "height": 33,
       "startingweight": 33,
-       
       "assessments": [
         {
           "id": "03",
@@ -29,13 +28,13 @@
           "hips": 1
         },
         {
-          "id": "05",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
+          "id": "0eb14999-e592-41a9-b0a6-9653c99e004c",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1"
         }
       ]
     },
@@ -47,7 +46,6 @@
       "gender": "Beethoven Sonatas",
       "height": 353,
       "startingweight": 353,
-      
       "assessments": [
         {
           "id": "06",

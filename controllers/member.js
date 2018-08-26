@@ -1,5 +1,5 @@
 'use strict';
-
+const uuid = require('uuid');
 const logger = require('../utils/logger');
 const memberStore = require('../models/member-store');
 
@@ -12,6 +12,22 @@ const member = {
       member: memberStore.getMember(memberId),
     };
     response.render('member', viewData);
+  },
+  
+  addAssessment(request, response) {
+    const memberId = request.params.id;
+    const member = memberStore.getMember(memberId);
+    const newAssessment = {
+      id: uuid(),
+      weight: request.body.weight,
+      chest: request.body.chest,
+      thigh: request.body.thigh,
+      upperarm: request.body.upperarm,
+      waist: request.body.waist,
+      hips: request.body.hips,
+    };
+    memberStore.addAssessment(memberId, newAssessment);
+    response.redirect('/member/' + memberId);
   },
   
   deleteAssessment(request, response) {
