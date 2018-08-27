@@ -8,7 +8,36 @@
       "address": "2",
       "height": "2",
       "startingweight": "2",
-      "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8"
+      "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8",
+      "assessments": [
+        {
+          "id": "03",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "04",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        },
+        {
+          "id": "05",
+          "weight": 1,
+          "chest": 1,
+          "thigh": 1,
+          "upperarm": 1,
+          "waist": 1,
+          "hips": 1
+        }
+      ]
     },
     {
       "name": "dfsf",
@@ -18,7 +47,8 @@
       "address": "3",
       "height": "3",
       "startingweight": "3",
-      "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c"
+      "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c",
+      "assessments": []
     },
     {
       "name": "1",
@@ -28,7 +58,18 @@
       "address": "1",
       "height": "1",
       "startingweight": "1",
-      "id": "741f57f2-33b4-4fd8-9c29-620ca32635fa"
+      "id": "741f57f2-33b4-4fd8-9c29-620ca32635fa",
+      "assessments": [
+        {
+          "id": "135ec9f3-54f7-40c2-ad65-8b0f2673c357",
+          "weight": "1",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1"
+        }
+      ]
     }
   ]
 }
