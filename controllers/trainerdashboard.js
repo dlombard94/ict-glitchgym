@@ -36,6 +36,15 @@ const trainerdashboard = {
     response.redirect('/trainerdashboard');
   },
   
+  updateComment(request, response){
+    const assessmentId = request.params.id;
+    const newcomment =  request.body.comment;
+    logger.debug(`New comment = ${newcomment}`);
+    memberStore.updateComment(assessmentId, newcomment);
+    logger.debug(`New comment = ${newcomment}`);
+    response.redirect('/trainerdashboard');
+  },
+  
 };
 
 module.exports = trainerdashboard;

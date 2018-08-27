@@ -1,5 +1,5 @@
 'use strict';
-
+const logger = require('../utils/logger');
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 
@@ -8,8 +8,8 @@ const memberStore = {
   store: new JsonStore('./models/member-store.json', { memberCollection: [] }),
   collection: 'memberCollection',
 
-  getMemberAssessmments(memberid) {
-    return this.store.findBy(this.collection, { memberid: memberid });
+  getSpecificAssessment(assessmentid) {
+    return this.store.findBy(this.collection.assessments, { assessmentid: assessmentid });
   },
   
   getAllMembers() {
@@ -41,7 +41,7 @@ const memberStore = {
   
   addAssessment(id, assessment) {
     const member = this.getMember(id);
-    member.assessments.push(assessment);
+    member.assessments.push(assessment.hips);
     this.store.save();
   },
   
@@ -51,6 +51,13 @@ const memberStore = {
     _.remove(assessments, {id:assessmentId});
     this.store.save();
   },
+  
+  updateComment(assessmentId, newcomment){
+    const assessment = this.getSpecificAssessment(assessmentId);
+    logger.debug(`assessment = ${assessment}`);
+    assessment.comment = newcomment;
+    this.store.save();
+  }
 };
 
 
