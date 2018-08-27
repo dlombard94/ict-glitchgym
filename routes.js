@@ -21,7 +21,7 @@ router.get('/', dashboard.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 
-router.get('/member/:id',member.index);
+// router.get('/member/:id',member.index);
 router.post('/dashboard/addassessment', dashboard.addAssessment);
 router.get('/dashboard/:id/deleteassessment/:assessmentid',dashboard.deleteAssessment)
 

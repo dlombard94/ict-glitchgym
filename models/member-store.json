@@ -11,31 +11,22 @@
       "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8",
       "assessments": [
         {
-          "id": "03",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
+          "id": "9e0ad477-add2-4b1a-9c41-5947f3168212",
+          "weight": "3",
+          "chest": "3",
+          "thigh": "3",
+          "upperarm": "3",
+          "waist": "3",
+          "hips": "33"
         },
         {
-          "id": "04",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
-        },
-        {
-          "id": "05",
-          "weight": 1,
-          "chest": 1,
-          "thigh": 1,
-          "upperarm": 1,
-          "waist": 1,
-          "hips": 1
+          "id": "96f5a9ff-0dbc-4c56-9f37-c72bc21a0bfa",
+          "weight": "2",
+          "chest": "2",
+          "thigh": "2",
+          "upperarm": "2",
+          "waist": "2",
+          "hips": "22"
         }
       ]
     },
