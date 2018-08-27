@@ -33,6 +33,14 @@ const dashboard = {
     response.redirect('/dashboard');
   },
   
+  deleteAssessment(request, response) {
+    const memberId = request.params.id;
+    const assessmentId = request.params.assessmentid;
+    logger.debug(`Deleting Assessment ${assessmentId} from Member ${memberId}`);
+    memberStore.removeAssessment(memberId, assessmentId);
+    response.redirect('/dashboard');
+  },
+  
   
 };
 

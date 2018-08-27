@@ -14,7 +14,7 @@
     {{#each assessments}}
     <tr>
       <td>
-        weight
+        {{weight}}
       </td>
       <td>
         {{chest}}
@@ -32,7 +32,7 @@
         {{hips}}
       </td>
       <td>
-        <a href="/member/{{../member.id}}/deleteassessment/{{id}}" class="ui red icon button">
+        <a href="/dashboard/{{../member.id}}/deleteassessment/{{id}}" class="ui red icon button">
          <i class="icon trash"></i>        
         </a>
         </td>
