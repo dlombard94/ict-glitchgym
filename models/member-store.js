@@ -41,7 +41,7 @@ const memberStore = {
   
   addAssessment(id, assessment) {
     const member = this.getMember(id);
-    member.assessments.push(assessment.hips);
+    member.assessments.push(assessment);
     this.store.save();
   },
   
@@ -52,10 +52,20 @@ const memberStore = {
     this.store.save();
   },
   
-  updateComment(assessmentId, newcomment){
-    const assessment = this.getSpecificAssessment(assessmentId);
-    logger.debug(`assessment = ${assessment}`);
-    assessment.comment = newcomment;
+  
+  
+  updateComment(memberId, assessmentId, newcomment){
+    const member = this.getMember(memberId);
+    logger.debug(`member = ${member}`);
+    const assessments = member.assessments;
+    const assessment = _.pull(assessments, {id: assessmentId});
+    
+    function isAssessment(assessment) { 
+    return assessment.id === assessmentId;
+    }
+    
+    logger.debug(`assessment to update = ${assessment}`);
+    assessment.find(isAssessment).comment = newcomment;
     this.store.save();
   }
 };

@@ -40,5 +40,14 @@
         </td>
     </tbody>
 </table>
-{{>updatecomment}}
+<h3 class="ui header">
+    Comment
+</h3>
+
+<form class="ui form" action="/trainerassessment/{{../member.id}}/{{id}}/updatecomment" method="POST">
+    <div class="ui field">
+        <textarea rows="5" name="comment"> </textarea>
+    </div>
+    <button class="ui blue submit button"> Update </button>
+</form>
 {{/each}}
