@@ -2,6 +2,7 @@
 const uuid = require('uuid');
 const accounts = require ('./accounts.js');
 const logger = require('../utils/logger');
+const gymutility = require('../utils/gymutility');
 const memberStore = require('../models/member-store');
 
 const dashboard = {
@@ -12,7 +13,8 @@ const dashboard = {
     const viewData = {
       title: 'Mem - Glitch Gym Dashboard',
       member: memberStore.getMember(loggedInMember.id),
-      assessments: loggedInMember.assessments
+      assessments: loggedInMember.assessments,
+      memberBmi: gymutility.calculateBMI(memberStore.getMember(loggedInMember.id))
     };
     logger.info('about to render', memberStore.getAllMembers());
     response.render('dashboard', viewData);
