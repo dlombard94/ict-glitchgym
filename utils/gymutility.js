@@ -19,6 +19,22 @@ calculateBMI(member){
             memberBmi = (member.startingweight / ((member.height* member.height))*10)/10;
         }
         return memberBmi;
-}
+},
+  
+  determineBMICategory(bmivalue){
+    if (bmivalue < 16) {
+            return "SEVERELY UNDERWEIGHT";
+        } else if (bmivalue >= 16 && bmivalue < 18.5) {
+            return "UNDERWEIGHT";
+        } else if (bmivalue >= 18.5 && bmivalue < 25) {
+            return "NORMAL";
+        } else if (bmivalue >= 25 && bmivalue < 30) {
+            return "OVERWEIGHT";
+        } else if (bmivalue >= 30 && bmivalue < 35) {
+            return "MODERATELY OBESE";
+        } else {
+            return "SEVERELY OBESE";
+        }
+  }
 }
 module.exports = gymutility;

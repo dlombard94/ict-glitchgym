@@ -17,8 +17,7 @@
           "thigh": "3",
           "upperarm": "3",
           "waist": "3",
-          "hips": "33",
-          "comment": " bbbbb"
+          "hips": "33"
         },
         {
           "id": "96f5a9ff-0dbc-4c56-9f37-c72bc21a0bfa",
@@ -27,8 +26,7 @@
           "thigh": "2",
           "upperarm": "2",
           "waist": "2",
-          "hips": "22",
-          "comment": " erjfnejnferjnf"
+          "hips": "22"
         },
         "5",
         "5"
@@ -40,8 +38,8 @@
       "email": "3",
       "password": "secret",
       "address": "3",
-      "height": "3",
-      "startingweight": "3",
+      "height": "2",
+      "startingweight": "300",
       "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c",
       "assessments": []
     },

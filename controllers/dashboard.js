@@ -14,7 +14,8 @@ const dashboard = {
       title: 'Mem - Glitch Gym Dashboard',
       member: memberStore.getMember(loggedInMember.id),
       assessments: loggedInMember.assessments,
-      memberBmi: gymutility.calculateBMI(memberStore.getMember(loggedInMember.id))
+      memberBmi: gymutility.calculateBMI(memberStore.getMember(loggedInMember.id)),
+      memberBmiCategory: gymutility.determineBMICategory(gymutility.calculateBMI(memberStore.getMember(loggedInMember.id)))
     };
     logger.info('about to render', memberStore.getAllMembers());
     response.render('dashboard', viewData);
