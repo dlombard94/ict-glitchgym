@@ -52,6 +52,39 @@ const memberStore = {
     this.store.save();
   },
   
+  madeProgress(member,assessment){
+        var trend = false;
+        const assessments = this.assessments;
+        //if only 1 assessment done it checks that against the startingweight
+        if (assessments.length == 1 ){
+            if (this.startingweight<=assessments.shift().weight){
+                trend = false;
+            }else{
+                trend = true;
+            }
+        }
+
+        var lastIndex = assessments.length-1;
+        if (assessments.length > 1) {
+            //checks the very first assessment(last in the list due to reverse()) against the startingweight
+            if (_.indexOf(assessments, assessment)==lastIndex){
+                if (this.startingweight<=assessment.weight){
+                    trend = false;
+                }else{
+                    trend = true;
+                }
+            }else if (_.indexOf(assessments, assessment)!=lastIndex) {
+                //for every remaining assessment - it checks it against the previous one
+                if (assessment.weight < (_.pullAt(assessments,(_.indexOf(assessments, assessment) + 1)).weight)) {
+                    trend = true;
+                } else {
+                    trend = false;
+                }
+            }
+        }
+
+        return trend;
+    },
   
   
   updateComment(memberId, assessmentId, newcomment){

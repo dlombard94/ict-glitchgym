@@ -29,7 +29,29 @@
           "hips": "22"
         },
         "5",
-        "5"
+        "5",
+        {
+          "id": "f4c290d7-f7a2-4fa5-aafe-850b03c1fbc4",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperarm": "4",
+          "waist": "5",
+          "hips": "6",
+          "date": "2018-09-01T08:48:10.345Z",
+          "comment": ""
+        },
+        {
+          "id": "61143236-38e8-46ec-849a-48947cc701df",
+          "weight": "34",
+          "chest": "44",
+          "thigh": "4",
+          "upperarm": "44",
+          "waist": "44",
+          "hips": "44",
+          "date": "2018-09-01T08:48:23.724Z",
+          "comment": ""
+        }
       ]
     },
     {

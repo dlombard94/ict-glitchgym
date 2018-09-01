@@ -35,6 +35,8 @@ calculateBMI(member){
         } else {
             return "SEVERELY OBESE";
         }
-  }
+  },
+  
+  
 }
 module.exports = gymutility;
