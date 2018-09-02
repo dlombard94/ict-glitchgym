@@ -1,12 +1,15 @@
 <table class="ui table">
   <thead>
     <tr>
+       <th>Date</th>
        <th>Weight</th>
        <th>Chest</th>
        <th>Thigh</th>
        <th>Upper Arm</th>
        <th>Waist</th>
        <th>Hips</th>
+       <th>Comment</th>
+       <th></th>
        <th></th>
     </tr>
   </thead>
@@ -14,7 +17,10 @@
     {{#each assessments}}
     <tr>
       <td>
-        weight
+        {{date}}
+      </td>
+      <td>
+        {{weight}}
       </td>
       <td>
         {{chest}}
@@ -32,11 +38,14 @@
         {{hips}}
       </td>
       <td>
-        <a href="/member/{{../member.id}}/deleteassessment/{{id}}" class="ui red icon button">
+        {{comment}}
+      </td>
+      <td>
+        <a href="/dashboard/{{../member.id}}/deleteassessment/{{id}}" class="ui red icon button">
          <i class="icon trash"></i>        
         </a>
         </td>
-    </tr>
     {{/each}}
+    
   </tbody>
 </table>

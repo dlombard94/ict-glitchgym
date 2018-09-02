@@ -36,6 +36,7 @@ const accounts = {
   register(request, response) {
     const member = request.body;
     member.assessments = [];
+    member.goal = '';
     member.id = uuid();
     memberstore.addMember(member);
     logger.info(`registering ${member.email}`);

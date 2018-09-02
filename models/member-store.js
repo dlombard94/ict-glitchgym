@@ -1,5 +1,5 @@
 'use strict';
-
+const logger = require('../utils/logger');
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 
@@ -8,8 +8,8 @@ const memberStore = {
   store: new JsonStore('./models/member-store.json', { memberCollection: [] }),
   collection: 'memberCollection',
 
-  getMemberAssessmments(memberid) {
-    return this.store.findBy(this.collection, { memberid: memberid });
+  getSpecificAssessment(assessmentid) {
+    return this.store.findBy(this.collection.assessments, { assessmentid: assessmentid });
   },
   
   getAllMembers() {
@@ -41,7 +41,14 @@ const memberStore = {
   
   addAssessment(id, assessment) {
     const member = this.getMember(id);
-    member.assessments.push(assessment);
+    var memberAssessments = member.assessments.sort(function(a, b){return b.date - a.date});
+    memberAssessments.unshift(assessment);
+    this.store.save();
+  },
+  
+  addGoal(id, newGoal) {
+    const member = this.getMember(id);
+    member.goal = newGoal;
     this.store.save();
   },
   
@@ -51,6 +58,25 @@ const memberStore = {
     _.remove(assessments, {id:assessmentId});
     this.store.save();
   },
+  
+  
+    
+  
+  
+  updateComment(memberId, assessmentId, newcomment){
+    const member = this.getMember(memberId);
+    logger.debug(`member = ${member}`);
+    const assessments = member.assessments;
+    const assessment = _.pull(assessments, {id: assessmentId});
+    
+    function isAssessment(assessment) { 
+    return assessment.id === assessmentId;
+    }
+    
+    logger.debug(`assessment to update = ${assessment}`);
+    assessment.find(isAssessment).comment = newcomment;
+    this.store.save();
+  }
 };
 
 
