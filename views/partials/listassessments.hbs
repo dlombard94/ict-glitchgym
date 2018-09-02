@@ -9,7 +9,7 @@
        <th>Waist</th>
        <th>Hips</th>
        <th>Comment</th>
-       <th>Weight Progress</th>
+       <th></th>
        <th></th>
     </tr>
   </thead>
@@ -41,16 +41,11 @@
         {{comment}}
       </td>
       <td>
-        
-
-      
-      </td>
-      <td>
         <a href="/dashboard/{{../member.id}}/deleteassessment/{{id}}" class="ui red icon button">
          <i class="icon trash"></i>        
         </a>
         </td>
-    </tr>
     {{/each}}
+    
   </tbody>
 </table>

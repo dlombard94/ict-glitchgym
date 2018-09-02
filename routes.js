@@ -23,6 +23,7 @@ router.get('/about', about.index);
 
 // router.get('/member/:id',member.index);
 router.post('/dashboard/addassessment', dashboard.addAssessment);
+router.post('/dashboard/addgoal', dashboard.addGoal);
 router.get('/dashboard/:id/deleteassessment/:assessmentid',dashboard.deleteAssessment)
 
 router.get('/trainerdashboard',trainerdashboard.index);

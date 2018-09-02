@@ -1,90 +1,93 @@
 {
   "memberCollection": [
     {
-      "name": "wer",
-      "gender": "wer",
+      "name": "Darragh",
+      "gender": "M",
       "email": "2",
       "password": "secret",
       "address": "2",
       "height": "2",
-      "startingweight": "2",
+      "startingweight": "120",
       "id": "1c103f6b-253a-48dd-8b25-b97c9c1e8ab8",
       "assessments": [
         {
-          "id": "9e0ad477-add2-4b1a-9c41-5947f3168212",
-          "weight": "3",
-          "chest": "3",
-          "thigh": "3",
-          "upperarm": "3",
-          "waist": "3",
-          "hips": "33"
+          "id": "eb3c9abc-bbb9-45a1-a9cc-824b502786ea",
+          "weight": "93",
+          "chest": "",
+          "thigh": "",
+          "upperarm": "",
+          "waist": "",
+          "hips": "",
+          "date": "2018-09-02T15:37:41.473Z",
+          "comment": " Well Done!"
         },
         {
-          "id": "96f5a9ff-0dbc-4c56-9f37-c72bc21a0bfa",
+          "id": "b4542715-a07a-420b-9d5c-b7158f265caa",
+          "weight": "10",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1",
+          "date": "2018-09-02T15:29:32.629Z",
+          "comment": ""
+        },
+        {
+          "id": "1ea9f9d0-c49d-43b6-97d4-2958b1137542",
+          "weight": "93",
+          "chest": "1",
+          "thigh": "1",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1",
+          "date": "2018-09-02T13:07:41.400Z",
+          "comment": ""
+        },
+        {
+          "id": "45726855-3954-4837-be12-a1d5d19db9ff",
           "weight": "2",
           "chest": "2",
           "thigh": "2",
           "upperarm": "2",
           "waist": "2",
-          "hips": "22"
-        },
-        "5",
-        "5",
-        {
-          "id": "f4c290d7-f7a2-4fa5-aafe-850b03c1fbc4",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperarm": "4",
-          "waist": "5",
-          "hips": "6",
-          "date": "2018-09-01T08:48:10.345Z",
+          "hips": "2",
+          "date": "2018-09-02T13:07:28.569Z",
           "comment": ""
         },
         {
-          "id": "61143236-38e8-46ec-849a-48947cc701df",
-          "weight": "34",
-          "chest": "44",
-          "thigh": "4",
-          "upperarm": "44",
-          "waist": "44",
-          "hips": "44",
-          "date": "2018-09-01T08:48:23.724Z",
-          "comment": ""
-        }
-      ]
-    },
-    {
-      "name": "dfsf",
-      "gender": "sdf",
-      "email": "3",
-      "password": "secret",
-      "address": "3",
-      "height": "2",
-      "startingweight": "300",
-      "id": "ef2765ea-51b9-4fcb-8d29-c75fabf81a2c",
-      "assessments": []
-    },
-    {
-      "name": "1",
-      "gender": "1",
-      "email": "1",
-      "password": "secret",
-      "address": "1",
-      "height": "1",
-      "startingweight": "1",
-      "id": "741f57f2-33b4-4fd8-9c29-620ca32635fa",
-      "assessments": [
-        {
-          "id": "135ec9f3-54f7-40c2-ad65-8b0f2673c357",
+          "id": "ede0ebcc-3a7c-414e-b527-1e1af25552dd",
           "weight": "1",
           "chest": "1",
           "thigh": "1",
           "upperarm": "1",
           "waist": "1",
-          "hips": "1"
+          "hips": "1",
+          "date": "2018-09-02T13:07:19.273Z",
+          "comment": ""
         }
-      ]
+      ],
+      "goal": {
+        "id": "ddad3ce1-e8c9-470c-bcca-101e6af0f8fd",
+        "weight": "10",
+        "chest": "10",
+        "thigh": "10",
+        "upperarm": "10",
+        "waist": "10",
+        "hips": "10",
+        "date": "2020-12-12T00:00:00.000Z"
+      }
+    },
+    {
+      "name": "",
+      "gender": "",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "address": "",
+      "height": "",
+      "startingweight": "",
+      "assessments": [],
+      "goal": "",
+      "id": "278380e6-5724-4067-a4b5-ea0b0865db47"
     }
   ]
 }

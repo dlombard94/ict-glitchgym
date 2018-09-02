@@ -1,12 +1,21 @@
 {{> menu id='dashboard'}}
 
+<section class="ui segment">
   <h2 class="ui header">
-    {{member.name}}
-    BMI = {{memberBmi}}
-    BMI CATEGORY = {{memberBmiCategory}}
+    Your Summary
+  </h2>
+  {{>membersummary}}
+  <h2 class="ui header">
+    Your Goals
+  </h2>
+  {{>listgoaltargets member.goal}}
+  {{>listgoal goalProgress}}
+  <h2 class="ui header">
+    Your Assessments
   </h2>
   {{>listassessments}}
   {{>addassessment}}
+  {{>addgoal}}
 </section>
 
 
