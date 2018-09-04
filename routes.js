@@ -4,7 +4,7 @@ const express = require('express');
 const accounts = require('./controllers/accounts.js');
 const router = express.Router();
 const trainerdashboard = require('./controllers/trainerdashboard.js');
-const member = require('./controllers/member.js');
+
 
 const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
@@ -21,7 +21,7 @@ router.get('/', dashboard.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 
-// router.get('/member/:id',member.index);
+
 router.post('/dashboard/addassessment', dashboard.addAssessment);
 router.post('/dashboard/addgoal', dashboard.addGoal);
 router.get('/dashboard/:id/deleteassessment/:assessmentid',dashboard.deleteAssessment)
